@@ -24,7 +24,7 @@ use City;
 	}
 	
 	my $country 			= $cityinfo->{'city_info'}->{$city}->{'country'};
-	my $country_population 	= $cityinfo->{'country_info'}->{$country}->{'total_population'};
+	my $country_population 		= $cityinfo->{'country_info'}->{$country}->{'total_population'};
 	my $population			= $cityinfo->{'city_info'}->{$city}->{'population'};
 	
 	$country_population = pretify( $country_population );
