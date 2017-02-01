@@ -59,7 +59,11 @@ sub _parse
 		if  ($country_info{$country}->{'current_max'} < $population)
 		{
 			my $total_population = $country_info{$country}->{'total_population'} + $population;
-			$country_info{$country}	= {'total_population' => $total_population, 'capital' => $name, 'current_max' => $population};
+			$country_info{$country}	= {
+					'total_population' => $total_population, 
+					'capital' 	   => $name, 
+					'current_max' 	   => $population
+					};
 		}
 		else
 		{
