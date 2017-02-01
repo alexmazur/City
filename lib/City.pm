@@ -13,7 +13,7 @@ sub new{
     my $self = bless { 
 		'filename' 	=> $args->{'filename'},
 		'city_info'	=> $cityinfo->{'city_info'},
-		'country_info'=> $cityinfo->{'country_info'}
+		'country_info'	=> $cityinfo->{'country_info'}
                      }, $class;
 }
 
@@ -62,7 +62,7 @@ sub get_cities_by_country
    
    for my $cit ( sort keys $self->{'city_info'} )
    {
-		push @city_list, $cit if $self->{'city_info'}->{$cit}->{'country'} eq $country;
+	push @city_list, $cit if $self->{'city_info'}->{$cit}->{'country'} eq $country;
    }
    
    return \@city_list;
