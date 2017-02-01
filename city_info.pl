@@ -42,7 +42,6 @@ use City;
 		$cityinfo->{'country_info'}->{$country}->{'capital'};
 	}
 
-　
 sub help
 {
 	say "Usage: city_info.pl --city <city name> [--filename <optional filename holding the city info>] ";
