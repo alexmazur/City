@@ -4,9 +4,9 @@ use feature qw(say switch);
 use Getopt::Long;
 
 GetOptions (
-			"city=s" 	=> \$city,
-    		"filename=s"=> \$file
-    		);
+		"city=s" 	=> \$city,
+    		"filename=s"	=> \$file
+    	    );
 
 help() unless $city;
 
