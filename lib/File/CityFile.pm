@@ -51,7 +51,7 @@ sub _parse
 		
 		$population =~ s/[\.|\,]//g;
 		
-		$country_info{$country}->{'current_max'} 	 	= 0 unless $country_info{$country}->{'current_max'};
+		$country_info{$country}->{'current_max'} 	= 0 unless $country_info{$country}->{'current_max'};
 		$country_info{$country}->{'total_population'} 	= 0 unless $country_info{$country}->{'total_population'};
 		
 		$city_info{$name} = { 'country'=> $country, 'population' => $population};
@@ -71,5 +71,4 @@ sub _parse
 
 }
 
-　
 1;
