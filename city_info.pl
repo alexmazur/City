@@ -27,7 +27,7 @@ use City;
 	my $country_population 		= $cityinfo->{'country_info'}->{$country}->{'total_population'};
 	my $population			= $cityinfo->{'city_info'}->{$city}->{'population'};
 	
-	$country_population = pretify( $country_population );
+	$country_population 		= pretify( $country_population );
 	$population			= pretify( $population );
 	
 	if ( $cityinfo->{'country_info'}->{$country}->{'capital'} eq $city)
